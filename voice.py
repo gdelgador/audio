@@ -1,10 +1,7 @@
 import speech_recognition 
-
+import os
 import time
 from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
 
 
@@ -33,8 +30,7 @@ def main():
     search.send_keys(words)
     search.send_keys(Keys.ENTER)
 
-    time.sleep(10)
-
 
 if __name__ == "__main__":
     main()
+    os.system("pause")
